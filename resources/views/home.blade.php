@@ -8,16 +8,16 @@
     <div class="movies">
         @forelse($movies as $movie)
         <div class="movie">
-            <h4>{{$movie->title}}</h4>
+            <h4>Titolo: {{$movie->title}}</h4>
         </div>
         <div class="nation">
-            <h5>{{$movie->nationality}}</h4>
+            <h5>Nazionalità: {{$movie->nationality}}</h4>
         </div>
         <div class="year">
-            <p>{{$movie->date}}</p>
+            <p>Anno: {{$movie->date}}</p>
         </div>
         <div class="vote">
-            <p>{{$movie->vote}}</p>
+            <p>Voto: {{$movie->vote}}</p>
         </div>
         @empty
         <p>Sorry no movie found</p>
